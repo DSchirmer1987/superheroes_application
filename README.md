@@ -1,16 +1,17 @@
 # superheroes_application
 
-A new Flutter project.
+A Flutter desktop app that is compatible with Windows, Linux and Web.
 
-## Getting Started
+## Key-Features:
+* Superheroes listing
+* Search
+* Add/Remove of favorites
 
-This project is a starting point for a Flutter application.
+## Pages:
+* Home Page (List of Superheroes)
+* Search Page (Search by Name)
+* Details Page (Details of the Superhero, by clicking inside the Home and/or Search page)
+* Favourite Page (List of favourised superheroes)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Datasource:
+https://superheroapi.com/index.html
