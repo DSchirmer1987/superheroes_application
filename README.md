@@ -15,3 +15,6 @@ A Flutter desktop app that is compatible with Windows, Linux and Web.
 
 ## Datasource:
 https://superheroapi.com/index.html
+
+## Used Third-Party Libraries and Frameworks:
+* http 0.13.5 - dart.dev
