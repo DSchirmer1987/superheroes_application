@@ -21,8 +21,8 @@ class StartPageState extends State<StartPage> {
 
   final List<Widget> _pages = <Widget>[
     const HomePage(),
-    SearchPage(),
-    FavPage(),
+    const SearchPage(),
+    const FavPage(),
   ];
 
   @override
