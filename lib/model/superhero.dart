@@ -25,15 +25,27 @@ class Superhero {
   }
 
   static Superhero fromMap(Map<String, dynamic> map) => Superhero(
-      id: map['id'],
-      name: map['name'],
-      powerstats: map['powerstats'],
-      biography: map['biography'],
-      appearance: map['appearance'],
-      work: map['work'],
-      connections: map['connections'],
-      image: Image.network(map['image']));
+        id: map['id'],
+        name: map['name'],
+        powerstats: map['powerstats'],
+        biography: map['biography'],
+        appearance: map['appearance'],
+        work: map['work'],
+        connections: map['connections'],
+        image: Image.network(map['image']['url']),
+      );
 
   static Superhero fromJson(String data) =>
       Superhero.fromMap(json.decode(data));
+
+  static Map<String, dynamic> toMap(Superhero superhero) => {
+        'id': superhero.id,
+        'name': superhero.name,
+        'powerstats': superhero.powerstats,
+        'biography': superhero.biography,
+        'appearance': superhero.appearance,
+        'work': superhero.work,
+        'connections': superhero.connections,
+        'image': Map<String, String>
+      };
 }
