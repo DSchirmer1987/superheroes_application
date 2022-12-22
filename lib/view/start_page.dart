@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:superheroes_application/view/fav_page.dart';
+import 'package:superheroes_application/view/home_page.dart';
+import 'package:superheroes_application/view/search_page.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({super.key});
@@ -10,18 +12,17 @@ class StartPage extends StatefulWidget {
 
 class StartPageState extends State<StartPage> {
   int _selectedIndex = 1;
+
   void _onItemTapped(int index) {
-    _selectedIndex = index;
+    setState(() {
+      _selectedIndex = index;
+    });
   }
 
   final List<Widget> _pages = <Widget>[
-    Center(
-      child: Column(),
-    ),
+    HomePage(),
+    SearchPage(),
     FavPage(),
-    Center(
-      child: Column(),
-    )
   ];
 
   @override
