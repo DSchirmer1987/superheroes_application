@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class StartPage extends StatefulWidget {
+  const StartPage({super.key});
 
   @override
-  State<StatefulWidget> createState() => HomePageState();
+  State<StatefulWidget> createState() => StartPageState();
 }
 
-class HomePageState extends State<HomePage> {
+class StartPageState extends State<StartPage> {
   int _selectedIndex = 1;
   void _onItemTapped(int index) {
     _selectedIndex = index;

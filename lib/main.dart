@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:superheroes_application/view/home_page.dart';
+import 'package:superheroes_application/view/start_page.dart';
 
 void main() {
   runApp(const MyApp(
-    startPage: HomePage(),
+    startPage: StartPage(),
   ));
 }
 
