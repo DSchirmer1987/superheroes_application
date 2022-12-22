@@ -13,8 +13,12 @@ class _DetailPageState extends State<DetailPage> {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text("Detail Page"),
+        children: [
+          Row(
+            children: [
+              Text('Name'),
+            ],
+          )
         ],
       ),
     );
