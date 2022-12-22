@@ -10,7 +10,7 @@ class Superhero {
   Map<String, String>? appearance;
   Map<String, String>? work;
   Map<String, String>? connections;
-  Image? image;
+  String? imageURL;
 
   Superhero(
       {this.id,
@@ -20,7 +20,7 @@ class Superhero {
       this.appearance,
       this.work,
       this.connections,
-      this.image}) {
+      this.imageURL}) {
     powerstats = <String, String>{};
   }
 
@@ -32,7 +32,7 @@ class Superhero {
         appearance: map['appearance'],
         work: map['work'],
         connections: map['connections'],
-        image: Image.network(map['image']['url']),
+        imageURL: map['image']['url'],
       );
 
   static Superhero fromJson(String data) =>
@@ -46,6 +46,9 @@ class Superhero {
         'appearance': superhero.appearance,
         'work': superhero.work,
         'connections': superhero.connections,
-        'image': Map<String, String>
+        'image': <String, dynamic>{"url": superhero.imageURL},
       };
+
+  static String toJson(Superhero superhero) =>
+      json.encode(Superhero.toMap(superhero));
 }
