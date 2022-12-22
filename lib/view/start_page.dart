@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:superheroes_application/view/fav_page.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({super.key});
@@ -17,6 +18,10 @@ class StartPageState extends State<StartPage> {
     Center(
       child: Column(),
     ),
+    FavPage(),
+    Center(
+      child: Column(),
+    )
   ];
 
   @override
@@ -25,7 +30,9 @@ class StartPageState extends State<StartPage> {
       appBar: AppBar(
         title: const Text("Superhero Application"),
       ),
-      body: Center(),
+      body: Center(
+        child: _pages.elementAt(_selectedIndex),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
