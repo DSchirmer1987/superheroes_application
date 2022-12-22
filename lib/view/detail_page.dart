@@ -15,9 +15,8 @@ class _DetailPageState extends State<DetailPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
-            children: [
-              Text('Name'),
-            ],
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Text('Name')],
           )
         ],
       ),
