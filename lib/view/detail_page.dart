@@ -23,7 +23,7 @@ class _DetailPageState extends State<DetailPage> {
               Text(superhero.name),
               Image.network(
                 superhero.imageURL,
-                scale: 0.25,
+                scale: 2,
               )
             ],
           )
