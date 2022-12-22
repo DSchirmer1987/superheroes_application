@@ -20,40 +20,10 @@ class StartPageState extends State<StartPage> {
   }
 
   final List<Widget> _pages = <Widget>[
-    HomePage();,
+    HomePage(),
     SearchPage(),
     FavPage(),
   ];
-
-  final List<Widget> _pages = <Widget>[
-    Center(
-        child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-                Text("Settings"),
-                Icon(Icons.settings),
-            ],
-        ),
-    ),
-    Center(
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-                Text("Home"),
-                Icon(Icons.home),
-            ],
-        ),
-    ),
-Center(
-    child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-                Text("Messages"),
-                Icon(Icons.message),
-            ],
-        ),
-    ),
-];
 
   @override
   Widget build(BuildContext context) {
