@@ -20,7 +20,7 @@ class StartPageState extends State<StartPage> {
   }
 
   final List<Widget> _pages = <Widget>[
-    HomePage(),
+    const HomePage(),
     SearchPage(),
     FavPage(),
   ];
