@@ -3,11 +3,11 @@ import 'dart:convert';
 class Superhero {
   String id;
   String name;
-  Map<String, String> powerstats;
-  Map<String, String> biography;
-  Map<String, String> appearance;
-  Map<String, String> work;
-  Map<String, String> connections;
+  Map<String, dynamic> powerstats;
+  Map<String, dynamic> biography;
+  Map<String, dynamic> appearance;
+  Map<String, dynamic> work;
+  Map<String, dynamic> connections;
   String imageURL;
 
   Superhero(
