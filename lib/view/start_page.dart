@@ -11,7 +11,8 @@ class StartPage extends StatefulWidget {
 }
 
 class StartPageState extends State<StartPage> {
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
+  final Widget _homePage = HomePage();
 
   void _onItemTapped(int index) {
     setState(() {
@@ -20,7 +21,7 @@ class StartPageState extends State<StartPage> {
   }
 
   final List<Widget> _pages = <Widget>[
-    HomePage(),
+    _homePage,
     SearchPage(),
     FavPage(),
   ];
