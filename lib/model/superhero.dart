@@ -1,26 +1,24 @@
 import 'dart:convert';
 
 class Superhero {
-  String? id;
-  String? name;
-  Map<String, String>? powerstats;
-  Map<String, String>? biography;
-  Map<String, String>? appearance;
-  Map<String, String>? work;
-  Map<String, String>? connections;
-  String? imageURL;
+  String id;
+  String name;
+  Map<String, String> powerstats;
+  Map<String, String> biography;
+  Map<String, String> appearance;
+  Map<String, String> work;
+  Map<String, String> connections;
+  String imageURL;
 
   Superhero(
-      {this.id,
-      this.name,
-      this.powerstats,
-      this.biography,
-      this.appearance,
-      this.work,
-      this.connections,
-      this.imageURL}) {
-    powerstats = <String, String>{};
-  }
+      {required this.id,
+      required this.name,
+      required this.powerstats,
+      required this.biography,
+      required this.appearance,
+      required this.work,
+      required this.connections,
+      required this.imageURL});
 
   static Superhero fromMap(Map<String, dynamic> map) => Superhero(
         id: map['id'],

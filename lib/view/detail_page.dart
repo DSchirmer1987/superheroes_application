@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:superheroes_application/model/mockup_data.dart';
+import 'package:superheroes_application/model/superhero.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({super.key});
@@ -8,6 +10,7 @@ class DetailPage extends StatefulWidget {
 }
 
 class _DetailPageState extends State<DetailPage> {
+  Superhero superhero = Superhero.fromJson(MockupData.getSuperheroExample());
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -16,7 +19,7 @@ class _DetailPageState extends State<DetailPage> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text('Name')],
+            children: [Text(superhero.name), Image.network(superhero.imageURL)],
           )
         ],
       ),

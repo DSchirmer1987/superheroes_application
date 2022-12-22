@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:superheroes_application/view/detail_page.dart';
 import 'package:superheroes_application/view/fav_page.dart';
 import 'package:superheroes_application/view/home_page.dart';
 import 'package:superheroes_application/view/search_page.dart';
@@ -20,7 +21,7 @@ class StartPageState extends State<StartPage> {
   }
 
   final List<Widget> _pages = <Widget>[
-    const HomePage(),
+    const DetailPage(),
     const SearchPage(),
     const FavPage(),
   ];
