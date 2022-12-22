@@ -17,16 +17,14 @@ class _DetailPageState extends State<DetailPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(superhero.name),
-              Image.network(
-                superhero.imageURL,
-                scale: 2,
-              )
-            ],
-          )
+          Text(
+            superhero.name,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+          ),
+          Image.network(
+            superhero.imageURL,
+            scale: 2,
+          ),
         ],
       ),
     );
