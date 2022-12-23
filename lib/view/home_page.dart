@@ -13,14 +13,9 @@ class _HomePageState extends State<HomePage> {
 
   Widget? homeBody;
 
-  void _showDetails() {
-    setState(() {
-      homeBody = const DetailPage();
-    });
-  }
-
   @override
-  Widget build(BuildContext context) {
+  void initState() {
+    super.initState();
     homeBody = ListView.builder(
       itemCount: items.length,
       itemBuilder: (context, index) {
@@ -32,7 +27,16 @@ class _HomePageState extends State<HomePage> {
         );
       },
     );
+  }
 
+  void _showDetails() {
+    setState(() {
+      homeBody = const DetailPage();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Center(child: homeBody);
   }
 }
