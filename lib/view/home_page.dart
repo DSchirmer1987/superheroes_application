@@ -9,7 +9,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final items = ['Batman', 'Spiderman', "Captain America"];
+  final items = ['Batman'];
 
   Widget? homeBody;
 

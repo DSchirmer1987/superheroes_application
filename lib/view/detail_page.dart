@@ -31,7 +31,7 @@ class _DetailPageState extends State<DetailPage> {
         FloatingActionButton(
           child: const Icon(Icons.arrow_back),
           onPressed: () {
-            _backToHome;
+            _backToHome();
           },
         )
       ],
