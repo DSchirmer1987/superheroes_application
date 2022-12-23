@@ -25,6 +25,10 @@ class _DetailPageState extends State<DetailPage> {
             superhero.imageURL,
             scale: 2,
           ),
+          FloatingActionButton(
+            child: Icon(Icons.arrow_back),
+            onPressed: () {},
+          )
         ],
       ),
     );
