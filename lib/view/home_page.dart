@@ -11,34 +11,28 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final items = ['Batman', 'Spiderman', "Captain America"];
 
+  Widget? homeBody;
+
+  void _showDetails() {
+    setState(() {
+      homeBody = const DetailPage();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    final Widget homebody = ListView.builder(
+    homeBody = ListView.builder(
       itemCount: items.length,
       itemBuilder: (context, index) {
         return ListTile(
           title: Text(items[index]),
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const DetailPage()));
+            _showDetails();
           },
         );
       },
     );
 
-    return Center(
-      child: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(items[index]),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const DetailPage()));
-            },
-          );
-        },
-      ),
-    );
+    return Center(child: homeBody);
   }
 }
