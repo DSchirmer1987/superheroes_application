@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:superheroes_application/view/detail_page.dart';
 import 'package:superheroes_application/view/fav_page.dart';
 import 'package:superheroes_application/view/home_page.dart';
 import 'package:superheroes_application/view/search_page.dart';
