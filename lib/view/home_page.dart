@@ -8,14 +8,21 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final items = ['Batman', 'Spiderman', "Captain America"];
+
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text("Home Page"),
-          Icon(Icons.home),
+        children: [
+          ListView.builder(
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text(items[index]),
+              );
+            },
+          )
         ],
       ),
     );

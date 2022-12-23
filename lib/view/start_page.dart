@@ -21,7 +21,7 @@ class StartPageState extends State<StartPage> {
   }
 
   final List<Widget> _pages = <Widget>[
-    const DetailPage(),
+    const HomePage(),
     const SearchPage(),
     const FavPage(),
   ];
@@ -39,8 +39,7 @@ class StartPageState extends State<StartPage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.favorite), label: "Favourite")
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorite")
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
